@@ -9,7 +9,6 @@ class SelectBox extends React.Component {
   handleClick = (e) => {
     const { value, callback } = this.props;
     const newValue = e.target.value;
-    console.log(e.target.value, value);
     if( value !== newValue) {
       callback(e);
     }
